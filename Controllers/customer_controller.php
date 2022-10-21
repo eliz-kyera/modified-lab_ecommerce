@@ -2,7 +2,7 @@
 
 require('../Classes/customer_class.php');
 
-//Add customer controller
+//Add customer controller 
 function add_customer_ctr($name, $email, $password, $country, $city, $contact, $image)
 {
     //create customer instance
