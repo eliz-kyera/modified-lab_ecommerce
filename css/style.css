@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../Images/medium-shot-excited-woman-shopping_23-2149313440.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.form{
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.form-control{
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.form-control input{
+    padding: 15px;
+    width: 100%;
+    background-color: #dbd7d362;
+    border: none;
+}
+
+.form-control button{
+    padding: 15px;
+    width: 100%;
+    background-color: #499A3D;
+    color: white;
+}
+
+p{
+    text-align: center;
+}
+
+p a{
+    text-decoration: none;
+    color: #6D9B3F;
+}
+
