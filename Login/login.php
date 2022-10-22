@@ -11,7 +11,7 @@
 <body>
     <div class="form">
         <h1>LOGIN</h1>
-        <form action="../Login/loginprocess.php" method="POST">
+        <form action="./loginprocess.php" method="POST">
             <div class="form-control">
                 <span class="error_msg"></span>
                 <input type="email" placeholder="Email" name="email">

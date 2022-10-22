@@ -5,8 +5,8 @@ require('../Settings/db_class.php');
 class Customer extends Connection{
 
     //methods
-    function add_customer($name, $email, $password, $country, $city, $contact, $image){
-        $sql= "INSERT INTO `customer`(`customer_name`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_contact`, `customer_image`,`user_role`) VALUES ('$name', '$email', '$password', '$country', '$city', '$contact', '$image','2')";
+    function add_customer($name, $email, $password, $country, $city, $contact){
+        $sql= "INSERT INTO `customer`(`customer_name`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_contact`, `user_role`) VALUES ('$name', '$email', '$password', '$country', '$city', '$contact','2')";
         return $this->query($sql);
     }
 

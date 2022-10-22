@@ -10,7 +10,7 @@
 <body>
     <div class="form">
         <h1>Customer Registration</h1>
-        <form action="../Login/registerprocess.php" method="POST">
+        <form action="./registerprocess.php" method="POST">
             <div class="form-control">
                 <input type="text" placeholder="Full name" name="name" id="name" required>
             </div>
@@ -45,7 +45,7 @@
             </div> -->
 
             <div class="form-control">
-                <button class="btn" type="submit" name="resgister" id="btn">REGISTER</button>
+                <button class="btn" type="submit" name="submit" id="btn">REGISTER</button></a>
             </div>
             
         </form>

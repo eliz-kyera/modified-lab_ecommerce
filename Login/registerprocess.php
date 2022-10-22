@@ -3,7 +3,7 @@
 require('../Controllers/customer_controller.php');
 
 
-if(isset($_POST['register'])){
+if(isset($_POST['submit'])){
 
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -11,7 +11,6 @@ if(isset($_POST['register'])){
     $country = $_POST["country"];
     $city = $_POST["city"];
     $contact = $_POST["contact"];
-    $image = $_POST["img"];
 
     //hash password
     $encryptedPass = password_hash($password, PASSWORD_BCRYPT);
@@ -19,9 +18,12 @@ if(isset($_POST['register'])){
 
     $result = add_customer_ctr($name, $email, $encryptedPass, $country, $city, $contact, $image);
 
-    if($result === true)
+    if($result)
     {
-        echo header("location: ../Login/login.php");
+        echo "success!";
+        header("location: ../Login/login.php");
+    } else {
+        echo "failed"; 
     }
 }
 

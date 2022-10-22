@@ -6,9 +6,15 @@ require('../Classes/customer_class.php');
 function add_customer_ctr($name, $email, $password, $country, $city, $contact, $image)
 {
     //create customer instance
-    $customer_instance = new Customer();
+    $customer_instance = new Customer;
     //call the method from the class
-    return $customer_instance->add_customer($name, $email, $password, $country, $city, $contact, $image);
+    $run_query =  $customer_instance->add_customer($name, $email, $password, $country, $city, $contact);
+
+    if ($run_query) {
+        return $run_query;
+    } else {
+        return false; 
+    }
 }
 
 
@@ -17,16 +23,22 @@ function add_customer_ctr($name, $email, $password, $country, $city, $contact, $
 function check_login_details_ctr($email)
 {
     //create customer instance
-    $customer_instance = new Customer();
+    $customer_instance = new Customer;
     //call the method from the class
-    return $customer_instance->check_login_details($email);
+    $run_query =  $customer_instance->check_login_details($email);
+
+    if ($run_query) {
+        return $run_query;
+    } else {
+        return false; 
+    }
 }
 
 
 
 function select_all_customer_ctr(){
     // create an instance of the Customer class
-    $customer_instance = new Customer();
+    $customer_instance = new Customer;
     // call the method from the class
     return $customer_instance->select_all_customer();
 
@@ -34,7 +46,7 @@ function select_all_customer_ctr(){
 
 function select_one_customer_ctr($id){
     // create an instance of the Customer class
-    $customer_instance = new Customer();
+    $customer_instance = new Customer;
     // call the method from the class
     return $customer_instance->select_one_customer($id);
 
