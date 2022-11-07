@@ -52,7 +52,7 @@ if (isset($_SESSION['email'])){
       <li class="nav-item">
         <a class="nav-link" href="./view/category.php">Category</a>
       </li><li class="nav-item">
-        <a class="nav-link" href="addproductform.php.">Products</a>
+        <a class="nav-link" href="./view/addproductform.php.">Products</a>
       </li>
 
       

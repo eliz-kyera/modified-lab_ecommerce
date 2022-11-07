@@ -41,7 +41,7 @@ if (isset($_SESSION['email'])){
         <a class="nav-link" href="category.php">Category</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./view/addproductform.php">Products</a>
+        <a class="nav-link" href="addproductform.php">Products</a>
       </li>
      
     </ul>
