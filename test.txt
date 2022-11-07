@@ -1,0 +1,16 @@
+$ipadd = getRealIpAddr();
+if(isset($_SESSION['customer_id'])){
+    $total = cartTotal_fxn($_SESSION['customer_id']);
+}else{
+    $total = cartTotalNull_fxn($ipadd);
+}
+
+
+<li class="nav-item">
+        <a class="nav-link" href="../view/cart.php">Cart(<?php echo $total['count']; ?>)</a>
+      </li>
+
+
+
+      $brand_id= $_POST['brand_id'];
+    $update_brand_name= $_POST['brand_name'];

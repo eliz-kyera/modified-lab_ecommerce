@@ -3,7 +3,7 @@
 require('../Classes/customer_class.php');
 
 //Add customer controller 
-function add_customer_ctr($name, $email, $password, $country, $city, $contact, $image)
+function add_customer_ctr($name, $email, $password, $country, $city, $contact)
 {
     //create customer instance
     $customer_instance = new Customer;
@@ -15,6 +15,14 @@ function add_customer_ctr($name, $email, $password, $country, $city, $contact, $
     } else {
         return false; 
     }
+}
+
+function get_user_role($email) {
+    $customer = new Customer;
+
+    $run_query = $customer->check_user_role($email);
+
+    return $run_query; 
 }
 
 

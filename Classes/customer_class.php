@@ -19,6 +19,12 @@ class Customer extends Connection{
 		return $this -> fetchOne($sql);
 	}
 
+    function check_user_role($email) {
+        $sql = "SELECT `user_role` FROM `customer` WHERE `customer_email` = '$email'";
+
+        return $this->fetchOne($sql); 
+    }
+
 
     
 
@@ -35,5 +41,7 @@ class Customer extends Connection{
     }
 
 }
+
+
 
 ?>

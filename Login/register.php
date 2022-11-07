@@ -45,9 +45,10 @@
             </div> -->
 
             <div class="form-control">
-                <button class="btn" type="submit" name="submit" id="btn">REGISTER</button></a>
+                <input type="submit" name="submit" value="REGISTER"> 
             </div>
             
+           
         </form>
     </div>
 

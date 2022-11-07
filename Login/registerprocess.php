@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
     $encryptedPass = password_hash($password, PASSWORD_BCRYPT);
 
 
-    $result = add_customer_ctr($name, $email, $encryptedPass, $country, $city, $contact, $image);
+    $result = add_customer_ctr($name, $email, $encryptedPass, $country, $city, $contact);
 
     if($result)
     {
