@@ -50,9 +50,9 @@ if (isset($_SESSION['email'])){
         <a class="nav-link" href="brand.php">Brand</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="category.php">Category</a>
+        <a class="nav-link" href="./view/category.php">Category</a>
       </li><li class="nav-item">
-        <a class="nav-link" href="addproductform.php.php">Products</a>
+        <a class="nav-link" href="addproductform.php.">Products</a>
       </li>
 
       

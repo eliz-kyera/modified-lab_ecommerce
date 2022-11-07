@@ -112,7 +112,7 @@ include("./navigation.php");
           $product_keywords = $value['product_keywords'];
         
       
-          echo "<li class='list-group-item'>". $product_title ."<a href='../functions/update_product.php?product_id=$product_id&product_title=$product_title&product_cat=$product_cat&product_brand=$product_brand&product_price=$product_price&product_desc=$product_desc&product_keywords=$product_keywords'> <button type='button' class='btn btn-success'>Update</button> </a>" ."<a href='../functions/delete_product.php?pid=$product_id'> <button type='button' class='btn btn-danger'>Delete</button> </a> </li>";
+          echo "<li class='list-group-item'>". $product_title . $product_price . $product_desc. $product_keywords."<a href='../functions/update_product.php?product_id=$product_id&product_title=$product_title&product_cat=$product_cat&product_brand=$product_brand&product_price=$product_price&product_desc=$product_desc&product_keywords=$product_keywords'> <button type='button' class='btn btn-success'>Update</button> </a>" ."<a href='../functions/delete_product.php?pid=$product_id'> <button type='button' class='btn btn-danger'>Delete</button> </a> </li>";
         }
 
         ?>

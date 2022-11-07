@@ -32,16 +32,16 @@ if (isset($_SESSION['email'])){
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="../login/logout.php">logout</a>
+        <a class="nav-link" href="../Login/logout.php">logout</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="brand.php">Brand</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../view/category.php">Category</a>
+        <a class="nav-link" href="category.php">Category</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="addproductform.php">Products</a>
+        <a class="nav-link" href="./view/addproductform.php">Products</a>
       </li>
      
     </ul>
@@ -53,10 +53,10 @@ if (isset($_SESSION['email'])){
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="../login/logout.php">logout</a>
+        <a class="nav-link" href="../Login/logout.php">logout</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../login/register.php">Register</a>
+        <a class="nav-link" href="../Login/register.php">Register</a>
       </li>
       
     </ul>
@@ -70,10 +70,10 @@ if (isset($_SESSION['email'])){
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="../login/login.php">Login</a>
+        <a class="nav-link" href="../Login/login.php">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../login/register.php">Register</a>
+        <a class="nav-link" href="../Login/register.php">Register</a>
       </li>
    
     </ul>
