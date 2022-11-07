@@ -1,7 +1,7 @@
 <?php 
 
 require_once('../Classes/product_class.php');
-
+// select brand function
 function get_brands(){
     $brand = new Productclass;
     $run_query = $brand->get_brands(); //the actual execution of the query 
@@ -19,7 +19,7 @@ function get_brands(){
 
     return $data; 
 }
-
+// select product
 function get_products(){
     $product = new Productclass;
     $run_query = $product->get_products(); //the actual execution of the query 
@@ -38,6 +38,7 @@ function get_products(){
     return $data; 
 }
 
+// add products
 function add_product($a, $b, $c, $d, $e, $f, $g){
     $brand = new Productclass; 
 
@@ -51,6 +52,7 @@ function add_product($a, $b, $c, $d, $e, $f, $g){
 }
 //print_r(get_brands());
 
+// add brand
 function add_brand($brand_name) {
     $brand = new Productclass; 
 
@@ -62,7 +64,8 @@ function add_brand($brand_name) {
         return false; 
     }
 }
-
+ 
+// update brand
 function update_brand_name($brand_id, $update_brand_name) {
     $brand= new Productclass;
     
@@ -77,6 +80,7 @@ function update_brand_name($brand_id, $update_brand_name) {
    
 }
 
+// delete brand
 
 function delete_brand_name($brand_id) {
     $brand = new Productclass; 
@@ -103,6 +107,7 @@ function delete_products($product_id) {
     }
 }
 
+// update product
 
 function update_products($product_id, $product_cat, $product_brand, $product_title, $product_price, $product_desc, $product_keywords){
     $products= new Productclass;

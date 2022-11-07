@@ -47,6 +47,8 @@
             <div class="form-control">
                 <input type="submit" name="submit" value="REGISTER"> 
             </div>
+
+            <p>Already registered? <a href="./login.php">Login</a></p>
             
            
         </form>

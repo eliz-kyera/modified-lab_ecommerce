@@ -23,5 +23,17 @@ if (isset($_POST["submit"])) {
     echo "failed"; 
  }
 
+ // validation is datatype 
+
+ // 1. Check if the submiit action was clicked
+//  2. get the input 
+//  3. validation 
+//  4. connect to db - database class/ db_query
+//  5. check if connection is working - data base class/ db_query
+//  6. write the query - partial db class
+//  7. execute/run the query - db query
+//  8. check if query run  success
+
+// fetchone - 4,5,7,8
 
 ?>

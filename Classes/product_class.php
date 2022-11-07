@@ -88,7 +88,7 @@ class Productclass extends Connection {
         return $this->query($sql);
     }
 
-    // detele
+    // detele categories
     function delete_categories($cat_id)
     {
         $sql= "DELETE FROM `categories` WHERE `cat_id`= $cat_id";

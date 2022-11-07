@@ -2,7 +2,7 @@
 require("../Controllers/product_controller.php");
 
 //get item to delete
-$delproduct = $_GET['pid'];
+$delproduct = $_GET['product_id'];
 
 
 
