@@ -1,4 +1,6 @@
 <?php
+// include("../Controller/product_controller.php");
+
 $product_id= $_GET['product_id'];
 $update_products= $_GET['product_title'];
 $update_products_price= $_GET['product_price'];

@@ -89,9 +89,9 @@ if (isset($_SESSION['email'])){
 <?php
 }?>
 
-<form class="form-inline my-2 my-lg-0" method="get" action="search_product.php">
+  <form class="form-inline my-2 my-lg-0" method="GET" action="search_product.php">
 <!-- <a class="nav-link" href="shoppnhome.php">Home <span class="sr-only"></span></a> -->
-<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit">Search</button>
       
     </form>
