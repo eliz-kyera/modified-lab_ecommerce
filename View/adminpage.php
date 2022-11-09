@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 require("../Controllers/product_controller.php");
 
     // //check if button is clicked
@@ -23,7 +23,7 @@ require("../Controllers/product_controller.php");
  return $ip;
 }
 ?>
-<!-- CSS only -->
+<!- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,8 +39,10 @@ session_start();
 if (isset($_SESSION['email'])){
     if($_SESSION['user_role'] == 1){
     //if user is admin
+
+    header('location: navigation.php'); 
     ?>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="../login/logout.php">logout</a>
@@ -50,14 +52,14 @@ if (isset($_SESSION['email'])){
         <a class="nav-link" href="brand.php">Brand</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./view/category.php">Category</a>
-      </li><li class="nav-item">
-        <a class="nav-link" href="./view/addproductform.php.">Products</a>
-      </li>
+        <a class="nav-link" href="category.php">Category</a> -->
+      <!-- </li><li class="nav-item">
+        <a class="nav-link" href="addproductform.php.">Products</a>
+      </li> -->
 
       
-    </ul>
-  </div>
+    <!-- </ul>
+  </div> -->
 <?php
     }else{
         //if user is customer
@@ -69,6 +71,9 @@ if (isset($_SESSION['email'])){
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../login/register.php">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="viewall_products.php">All Products</a>
       </li>
      
     </ul>
@@ -100,4 +105,4 @@ if (isset($_SESSION['email'])){
 </nav>
 
 
-
+ -->

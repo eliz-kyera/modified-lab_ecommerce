@@ -38,6 +38,17 @@ function get_products(){
     return $data; 
 }
 
+//selecting one product
+function get_one_product($product_id){
+
+  // creating instance
+  $select_product = new Productclass();
+
+  // return method
+  $data = $select_product -> get_one_product($product_id);
+    return $data;
+}
+
 // add products
 function add_product($a, $b, $c, $d, $e, $f, $g){
     $brand = new Productclass; 
@@ -167,6 +178,14 @@ function update_products($product_id, $product_cat, $product_brand, $product_tit
     
        
     // }
+
+    function search_products($a){
+
+        $search_product = new Productclass();
+      
+        return $search_product -> search_products($a);
+    }
+      
     
     
     function delete_category_name($cat_id) {

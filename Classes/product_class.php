@@ -13,6 +13,13 @@ class Productclass extends Connection {
         return $this->fetch($sql); 
     }
 
+    //Select one
+		function get_one_product($product_id){
+			$sql =" SELECT * FROM `products` WHERE `product_id` = '$product_id'";
+	
+			return $this -> fetch($sql);
+		}
+
     //SELECT BRANDS
     function get_brands() {
         $sql = "SELECT * FROM `brands`";
@@ -102,6 +109,17 @@ class Productclass extends Connection {
 
         return $this->query($sql); 
     }
+
+    // Search products
+    function search_products($a){
+        $sql = "SELECT * FROM `products` WHERE `product_title` LIKE '%$a%'";
+        return $this ->fetch($sql);
+        //return $sql;
+    }
+
+
+    
+
 
     
 

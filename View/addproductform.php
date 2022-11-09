@@ -23,7 +23,7 @@ require_once("../Controllers/category_controller.php");
 <?php
 include("./navigation.php");
 ?>
-    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         nn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 z
         <!-- <div class="container"> -->
         <h1 id="title" style="text-align: left;">Add Product</h1>
         <form method="POST" action="../functions/createproduct.php" style='padding-bottom: 10px;'>
@@ -92,32 +92,72 @@ include("./navigation.php");
 
             <br>
     </form>
-        <?php
+    <!-- <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Prouct Title</th>
+      <th scope="col">Product Price</th>
+      <th scope="col">Product Description</th>
+      <th scope="col">Product Keywords</th>
+      <th scope="col">Update</th>
+      <th scope="col">Delete</th>
+      <th scope="col">Cart</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+   
+  </tbody>
+</table> -->
+
+<?php
+$data=get_products();
+
+echo "<h1 id='title' style='text-align: left;'>View All Products</h1>";
+    echo '<table class="table">';
+        echo '<thead class= "thead-dark">';
+        echo '    <tr>';
+        echo '    <th scope="col">#</th>';
+        echo '    <th scope="col"Product Title</th>';
+        echo '    <th scope="col">Product Price</th>';
+        echo ' <th scope="col">Product  Description</th>';
+        echo ' <th scope="col">Product  Keywords</th>';
+        echo '    </tr>';
+        echo '</thead>';
+    foreach( $data as $key=>$value ){
         
-        $data = get_products();
-
+        $p_id = $value['product_id'];
+        $title = $value['product_title'];
+        $price = $value['product_price'];
+        $desc = $value['product_desc'];
+        $keyword = $value['product_keywords']; 
+       
+        echo '<tbody>';
+        echo '    <tr>';
+        echo ' <td>'.$value['product_id'].'</td>';
+        echo ' <td>'.$value['product_title'].'</td>';
+        echo ' <td>'.$value['product_price']. '</td>';
+        echo ' <td>'.$value['product_desc'].'</td>';
+        echo ' <td>'.$value['product_keywords'].'</td>';
+        echo '<td>'.'<a href='.'../functions/update_product.php?'.'product_id='.$value['product_id'].'&product_title='.$value['product_title'].'&product_price='.$value['product_price'].'&product_desc='.$value['product_desc'].'&product_keywords='.$value['product_keywords']."<button type='button' class='btn btn-success'>Update</button></a> ". '<a href='.'./functions/delete_product.php?'.'product_id='.$value['product_id']."<button type='button' class='btn btn-danger'>Delete</button></a>";
         
-
-        echo "<h1 id='title' style='text-align: left;'>View All Products</h1>";
-
-        foreach($data as $key=>$value) {
-
-
-          $product_id= $value['product_id'];
-          $product_brand= $value['product_brand'];
-          $product_cat = $value['product_cat'];
-          $product_title = $value['product_title'];
-          $product_price = $value['product_price'];
-          $product_desc = $value['product_desc'];
-          $product_keywords = $value['product_keywords'];
-        
-      
-          echo "<li class='list-group-item'>". $product_title . $product_price . $product_desc. $product_keywords."<a href='../functions/update_product.php?product_id=$product_id&product_title=$product_title&product_cat=$product_cat&product_brand=$product_brand&product_price=$product_price&product_desc=$product_desc&product_keywords=$product_keywords'> <button type='button' class='btn btn-success'>Update</button> </a>" ."<a href='../functions/delete_product.php?pid=$product_id'> <button type='button' class='btn btn-danger'>Delete</button> </a> </li>";
-        }
-
-        ?>
-        
-        
+        echo "<td><a href='../view/singleproduct.php?product_id=$p_id&product_title=$title&product_price=$price&product_desc=$desc&product_keywords=$keyword type='button' class='btn btn-warning'>View </a> ";
+        echo '</tr>'; 
+       
+    }
+    echo ' </tbody>
+        </table>';
+?>
+     
 
 
         <!--Optional JavaScript -->
