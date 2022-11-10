@@ -84,8 +84,8 @@ if (isset($_SESSION['email'])){
 <?php
     }}else{
 ?>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+    <!-- <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="../login/login.php">Login</a>
       </li>
@@ -95,14 +95,14 @@ if (isset($_SESSION['email'])){
       
     </ul>
 
-  </div>
+  </div> -->
 <?php
 }?>
-<form class="form-inline my-2 my-lg-0" method="get">
+<form class="form-inline my-2 my-lg-0" method="GET">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit">Search</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 </nav>
 
 
- -->
+ 

@@ -57,15 +57,19 @@ if (isset($_SESSION['email'])){
       <li class="nav-item">
         <a class="nav-link" href="../Login/logout.php">logout</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="../Login/register.php">Register</a>
+        <li class="nav-item"> -->
+        <a class="nav-link" href="viewall_products.php">All Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Login/logout.php">Cart</a>
+      </li>
       <!-- </li>
       <li class="nav-item">
         <a class="nav-link" href="">All Products</a>
       </li> -->
-      <li class="nav-item">
-        <a class="nav-link" href="">Cart</a>
-      </li>
+      
        
     </ul>
 
@@ -74,7 +78,7 @@ if (isset($_SESSION['email'])){
 <?php
     }}else{
 ?>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="../Login/login.php">Login</a>
@@ -85,14 +89,14 @@ if (isset($_SESSION['email'])){
    
     </ul>
 
-  </div>
+  </div> -->
 <?php
 }?>
 
   <form class="form-inline my-2 my-lg-0" method="GET" action="search_product.php">
 <!-- <a class="nav-link" href="shoppnhome.php">Home <span class="sr-only"></span></a> -->
       <input class="form-control mr-sm-2" type="search" placeholder="Search by title" aria-label="Search" name="search" >
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit">Search</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       
     </form>
 </nav> 
