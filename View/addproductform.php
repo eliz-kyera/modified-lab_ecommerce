@@ -26,7 +26,7 @@ include("./navigation.php");
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         <!-- <div class="container"> -->
         <h1 id="title" style="text-align: left;">Add Product</h1>
-        <form method="POST" action="../functions/createproduct.php" style='padding-bottom: 10px;'>
+        <form method="POST" action="../functions/createproduct.php" style='padding-bottom: 10px;' enctype="multipart/form-data">
             <select name="product_brand">
                 <?php
                  
@@ -81,6 +81,13 @@ include("./navigation.php");
                 <input type="text" placeholder="description" class="form-control" id="pdesc" name="pdesc">
 
             </div>
+
+     <div class="form-control">
+           
+            <input type="file" placeholder="Product Image" name="pimage" id="pimage">
+
+    </div>
+
 
             <div class="form-control">
                 <input type="text" placeholder='keyword' name="pkeyword" id="pkeyword">

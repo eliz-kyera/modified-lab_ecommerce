@@ -35,9 +35,15 @@ $update_products_keywords= $_GET['product_keywords'];
     <!-- <li class="list-group-item"></li> -->
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Add To Cart</a>
+   <button><a href="#" class="card-link">Add To Cart</a></button>
     <!-- <a href="#" class="card-link">Another link</a> -->
   </div>
 </div>
 </body>
 </html>
+
+// only accepts image
+//accept=image/*
+
+only accepts this type of image format
+// accept= image/png, image/jpeg
