@@ -64,10 +64,10 @@ $amt = 0;
 <div class="px-4 px-lg-0">
   <!-- For demo purpose -->
   <div class="container text-white py-5 text-center">
-    <h1 class="display-4">Bootstrap 4 shopping cart</h1>
-    <p class="lead mb-0">Build a fully structred shopping cart page using Bootstrap 4. </p>
-    <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class="text-white font-italic">
-            <u>Bootstrapious</u></a>
+    <h1 class="display-4">shopping cart</h1>
+    <p class="lead mb-0">Just one step away to paRADISE. </p>
+    <!-- <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class="text-white font-italic"> -->
+            <!-- <u>Bootstrapious</u></a> -->
     </p>
   </div>
   <!-- End -->
