@@ -76,7 +76,7 @@ if (isset($_SESSION['email'])){
         <a class="nav-link" href="viewall_products.php">All Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="cart.php">Cart</a>
+        <a class="nav-link" href="./cart.php">Cart</a>
       </li>
      
     </ul>
