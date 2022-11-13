@@ -73,6 +73,21 @@ class Connection{
 		// else return false
 		return false;
 	}
+
+	function db_count(){
+		
+		//check if result was set
+		if ($this->results == null) {
+			return false;
+		}
+		elseif ($this->results == false) {
+			return false;
+		}
+		
+		//return a record
+		return mysqli_num_rows($this->results);
+
+	}
 }
 
 ?>

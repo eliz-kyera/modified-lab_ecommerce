@@ -45,6 +45,11 @@ if (isset($_SESSION['email'])){
       <li class="nav-item">
         <a class="nav-link" href="addproductform.php">Products</a>
       </li>
+      <li class="nav-item">
+       <a class="nav-link" href="cart.php">Cart</a>
+      </li> 
+
+    
      
     </ul>
   </div>
@@ -63,7 +68,7 @@ if (isset($_SESSION['email'])){
         <a class="nav-link" href="viewall_products.php">All Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../Login/logout.php">Cart</a>
+        <a class="nav-link" href="cart.php">Cart</a>
       </li>
       <!-- </li>
       <li class="nav-item">

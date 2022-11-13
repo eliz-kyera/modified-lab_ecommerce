@@ -97,7 +97,13 @@
                                 <a class="cart" href="#">
                                     <span class="price">GH₵:<?php echo $product_one['product_price'] ?></span>
                                     <span class="add-to-cart">
-                                        <button><span class="txt">Add To Cart</span></button>
+                                        <button onclick= "window.location.href='../functions/add_cartprocess.php?product_id= <?php echo $product_id;?>'" class="txt btn btn-primary" >Add To Cart</button>
+                                        <?php
+                                        // echo "<a href='../functions/add_cartprocess.php?product_id= $product_id type='button' class='btn btn-primary'>Add </a></td> ";
+                                         ?>
+
+                                       
+                                        
                                     </span>
                                 </a>
                             </div>

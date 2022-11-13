@@ -1,5 +1,4 @@
 <?php
-
 include ('../Controllers/product_controller.php');
 
 $product_id= $_GET['product_id'];

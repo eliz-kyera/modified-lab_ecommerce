@@ -25,7 +25,7 @@ function get_user_role($email) {
     return $run_query; 
 }
 
-
+// hello
 
 //Verify Login controller
 function check_login_details_ctr($email)
