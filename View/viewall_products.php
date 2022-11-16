@@ -55,7 +55,7 @@ echo "<h1 id='title' style='text-align: left;'>View All Products</h1>";
         echo ' <td>'.$value['product_keywords'].'</td>';
         // echo '<td>'.'<a href='.'../functions/update_product.php?'.'product_id='.$value['product_id'].'&product_title='.$value['product_title'].'&product_price='.$value['product_price'].'&product_desc='.$value['product_desc'].'&product_keywords='.$value['product_keywords']."<button type='button' class='btn btn-success'>Update</button></a> ". '<a href='.'./functions/delete_product.php?'.'product_id='.$value['product_id']."<button type='button' class='btn btn-danger'>Delete</button></a>";
         
-        echo "<td><a href='singleproduct.php?product_id=$p_id&product_title=$title&product_price=$price&product_desc=$desc&product_keywords=$keyword type='button' class='btn btn-warning'>View </a> ";
+        echo "<td><a href='../view/singleproduct.php?product_id=$p_id&product_title=$title&product_price=$price&product_desc=$desc&product_keywords=$keyword type='button' class='btn btn-warning'>View </a> ";
         echo "<a href='../functions/add_cartprocess.php?product_id=$p_id&product_title=$title&product_price=$price&product_desc=$desc&product_keywords=$keyword type='button' class='btn btn-primary'>Add </a></td> ";
         echo '</tr>'; 
        

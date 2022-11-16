@@ -1,5 +1,5 @@
 <?php
-
+// require_once("../Controllers/cart_controller.php");
 
 
     function getRealIpAddr(){
@@ -74,6 +74,7 @@ if (isset($_SESSION['email'])){
       <li class="nav-item">
         <a class="nav-link" href="">All Products</a>
       </li> -->
+    
       
        
     </ul>

@@ -32,10 +32,17 @@ if (count($duplicate_check) == 0){
     }
 
 }
+// else{
+//     if(isset($_GET['addbutton'])){
+//     $update_check = update_cart_qty_ctrl($pid, $cid);
+//     echo '<script>alert("It has been added")</script>';
+//     }
+// }
 else{
     $update_check = update_cart_qty_ctrl($pid, $cid);
     if ($update_check) {
         if(isset($_GET['addbutton'])){
+            echo '<script>alert("It has been added")</script>';
             header('Location: ../view/cart.php');
             return;
         }
@@ -43,6 +50,7 @@ else{
        header('Location: ../view/viewall_products.php');
     }
     else{
+        
         echo "cart insertion failed";
     }
 
